@@ -20,16 +20,6 @@ function showSection(id){
 }
 
 // validation input
-function inputValidation(userInput, mainBalance){
-    if(isNaN(userInput) || userInput < 1 || userInput === ""){
-        alert("Invalid input");
-        return;
 
-    }else if(userInput > mainBalance){
-        alert("dontation amount cannot be greater then main balance");
-        return;
-    }
-    
-}
 
 

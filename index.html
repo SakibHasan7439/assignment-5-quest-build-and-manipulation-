@@ -15,9 +15,8 @@
         <div class="bg-[#F9F7F3]">
             <div class="navbar lg:max-w-[1000px] lg:mx-auto mb-12">
                 <div class="navbar-start">
-                    <a target="_blank" href="blog.html">
-                        <button class="py-1 px-4 md:py-2 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8">Blog</button>
-                    </a>
+                    <button id="blog" class="py-1 px-4 md:py-2 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8">Blog</button>
+
                 </div>
                 <div class="navbar-center">
                   <a class="text-xl flex items-center gap-3">
@@ -69,7 +68,8 @@
 
                         <input class="w-full px-4 py-3 border rounded-md mb-2 outline-none" type="text" name="flood-donation-input" id="noakhali-donation-input" placeholder="Write Donation Amout">
                         
-                        <button onclick="my_modal_1.showModal()" id="noakhali-donate-btn" class="w-full py-2 px-6 md:py-3 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8 capitalize">donate</button>
+                        <button id="noakhali-donate-btn" class="w-full py-2 px-6 md:py-3 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8 capitalize">donate</button>
+
                         <!-- Open the modal using ID.showModal() method -->
                         <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
@@ -78,9 +78,8 @@
                             <p class="py-4 text-center">You Have Donated for Humankind</p>
                             <p class="text-center font-bold text-xl">Successfully</p>
                             <div class="modal-action justify-center">
-                            <form method="dialog">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button id="close-modal" class="btn">Close Confirmation</button>
+                            <form method="dialog" class="flex justify-center flex-col">
+                                <button id="close-modal" class="btn w-[230px] mx-auto">Close Confirmation</button>
                             </form>
                             </div>
                         </div>
@@ -107,7 +106,7 @@
                         </p>
 
                         <input class="w-full px-4 py-3 border rounded-md mb-2 outline-none" type="text" name="feni-donation-input" id="feni-donation-input" placeholder="Write Donation Amout">
-                        <button id="feni-donate-btn" class="w-full py-2 px-6 md:py-3 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8 capitalize"  onclick="my_modal_2.showModal()">donate</button>
+                        <button id="feni-donate-btn" class="w-full py-2 px-6 md:py-3 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8 capitalize"  >donate</button>
                         <!-- Open the modal using ID.showModal() method -->
                         <dialog id="my_modal_2" class="modal">
                         <div class="modal-box">
@@ -145,7 +144,7 @@
                         </p>
 
                         <input class="w-full px-4 py-3 border rounded-md mb-2 outline-none" type="text" name="feni-donation-input" id="quota-donation-input" placeholder="Write Donation Amout">
-                        <button id="quota-donate-btn" class="w-full py-2 px-6 md:py-3 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8 capitalize" onclick="my_modal_3.showModal()">donate</button>
+                        <button id="quota-donate-btn" class="w-full py-2 px-6 md:py-3 rounded-md hover:bg-[#97d547] transition-colors duration-300 bg-[#B4F461] font-bold md:px-8 capitalize" >donate</button>
                         <!-- Open the modal using ID.showModal() method -->
                         <dialog id="my_modal_3" class="modal">
                         <div class="modal-box">
