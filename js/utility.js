@@ -49,5 +49,6 @@ function sectionCalculator(id1, id2){
     `
 }
 
-
-
+function clearInputField(id){
+    getElementById(id).value = "";
+}

@@ -33,6 +33,16 @@ quotaDonateBtn.addEventListener("click", ()=>{
 const closeModal = getElementById("close-modal");
 closeModal.addEventListener("click", ()=>{
     modal.classList.remove("modal-open");
+
+    if(getElementById("noakhali-donation-input").value !== ""){
+        getElementById("noakhali-donation-input").value = "";
+
+    }else if(getElementById("feni-donation-input").value !== ""){
+        getElementById("feni-donation-input").value = "";
+
+    }else if(getElementById("quota-donation-input").value !== ""){
+        getElementById("quota-donation-input").value = "";
+    }
 })
 
 // history section
