@@ -1,5 +1,4 @@
 const accountBalance = getInnerHTMLToNumber("balance");
-console.log(accountBalance);
 const donationSectionBtn = getElementById("donation");
 const historyBtn = getElementById("history");
 
