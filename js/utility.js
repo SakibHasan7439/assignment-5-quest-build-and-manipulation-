@@ -3,18 +3,6 @@ function getInputElementById(id){
     return parseFloat(inputValue.value);
 }
 
-
-// function getInputValueById(id){
-//     const inputValue = document.getElementById(id).value;
-//     const inputNumber = parseFloat(inputValue);
-//     return inputNumber;
-// }
-
-// function getElementById(id){
-//     let innerText = document.getElementById(id).innerText;
-//     return innerText;
-// }
-
 function getInnerHTMLToNumber(id){
     const innerValue = document.getElementById(id);
     return parseFloat(innerValue.innerText);
@@ -30,3 +18,18 @@ function showSection(id){
 
     return document.getElementById(id).classList.remove("hidden");
 }
+
+// validation input
+function inputValidation(userInput, mainBalance){
+    if(isNaN(userInput) || userInput < 1 || userInput === ""){
+        alert("Invalid input");
+        return;
+
+    }else if(userInput > mainBalance){
+        alert("dontation amount cannot be greater then main balance");
+        return;
+    }
+    
+}
+
+
