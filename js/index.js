@@ -6,7 +6,6 @@ const donationSection = getElementById("donation-section");
 const historySection = getElementById("history-section");
 const modal = document.getElementById("my_modal_1");
 
-// my_modal_1.showModal()
 
 // noakhali section started
 const noakhaliDonateBtn = getElementById("noakhali-donate-btn");
@@ -40,7 +39,6 @@ noakhaliDonateBtn.addEventListener("click", ()=>{
 })
 
 // feni seciton started
-
 const feniDonateBtn = getElementById("feni-donate-btn");
 
 feniDonateBtn.addEventListener("click", ()=>{
@@ -71,7 +69,6 @@ feniDonateBtn.addEventListener("click", ()=>{
 })
 
 // Quota donation section started
-
 const quotaDonateBtn = getElementById("quota-donate-btn");
 
 quotaDonateBtn.addEventListener("click", ()=>{
@@ -101,13 +98,13 @@ quotaDonateBtn.addEventListener("click", ()=>{
     `
 })
 
-
 // modal close button 
 const closeModal = getElementById("close-modal");
 closeModal.addEventListener("click", ()=>{
     modal.classList.remove("modal-open");
 })
 
+// history section
 historyBtn.addEventListener("click", (event)=>{
 
     event.target.classList.add("rounded-md", "hover:bg-[#97d547]", "transition-colors", "duration-300", "bg-[#B4F461]", "font-bold", "rounded-md");
@@ -117,6 +114,7 @@ historyBtn.addEventListener("click", (event)=>{
     showSection("history-section");
 });
 
+// donation section
 donationSectionBtn.addEventListener("click", (event)=>{
     event.target.classList.add("rounded-md", "hover:bg-[#97d547]", "transition-colors", "duration-300", "bg-[#B4F461]", "font-bold");
     
@@ -124,7 +122,6 @@ donationSectionBtn.addEventListener("click", (event)=>{
 
     showSection("donation-section");
 });
-
 
 // blog button
 const blog = getElementById("blog");

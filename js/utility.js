@@ -19,7 +19,6 @@ function showSection(id){
     return document.getElementById(id).classList.remove("hidden");
 }
 
-// validation input
 
 
 
