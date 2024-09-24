@@ -1,6 +1,6 @@
 function getInputElementById(id){
     const inputValue = document.getElementById(id);
-    return parseFloat(inputValue.value);
+    return Number(inputValue.value);
 }
 
 function getInnerHTMLToNumber(id){
